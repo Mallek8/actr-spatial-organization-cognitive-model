@@ -1,0 +1,41 @@
+# ACT-R specific
+*.fasl
+*.fas
+*.x86f
+*.lispf
+*.log
+
+# Common Lisp
+*.fasl
+*.fas
+*.x86f
+*.lispf
+*.log
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Temporary files
+*.tmp
+*.bak
+*~
+
+# Output files
+*.out
+*.err
+
+# Documentation builds
+*.aux
+*.log
+*.toc
+*.pdf.bak
+

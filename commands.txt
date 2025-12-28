@@ -1,0 +1,123 @@
+===========================================
+ACT-R EXECUTION COMMANDS
+===========================================
+Models: projet.lisp and projet_hauteur.lisp
+===========================================
+
+===========================================
+MODEL 1: projet.lisp
+===========================================
+(Base model - 2D: width and weight only)
+
+1. LOAD THE MODEL
+-------------------------------------------
+(clear-all)
+(load "projet.lisp")
+
+2. SINGLE EXECUTION (SINGLE TRIAL)
+-------------------------------------------
+;; Execute the model once WITHOUT graphical display
+(place-valises 1)
+
+;; Execute the model once WITH graphical display
+(place-valises 1 t)
+
+3. MULTIPLE EXECUTIONS (MULTIPLE TRIALS)
+-------------------------------------------
+;; Execute the model 10 times WITHOUT graphical display
+(place-valises 10)
+
+;; Execute the model 10 times WITH graphical display
+(place-valises 10 t)
+
+;; Execute the model 100 times (for statistics)
+(place-valises 100)
+
+4. LEARNING SIMULATION
+-------------------------------------------
+;; Generate a learning graph with 20 blocks of 1000 experiences
+(show-learning 20 t 1000)
+
+;; Generate a learning graph with 20 blocks of 100 experiences
+(show-learning 20 t 100)
+
+;; Generate learning data WITHOUT graph
+(show-learning 20 nil 100)
+
+;; Quick test: 3 blocks of 100 trials
+(show-learning 3 t 100)
+
+===========================================
+MODEL 2: projet_hauteur.lisp
+===========================================
+(Advanced model - 3D: width, weight and height)
+
+1. LOAD THE MODEL
+-------------------------------------------
+(clear-all)
+(load "projet_hauteur.lisp")
+
+2. SINGLE EXECUTION (SINGLE TRIAL)
+-------------------------------------------
+;; Execute the model once WITHOUT graphical display
+(place-valises 1)
+
+;; Execute the model once WITH graphical display
+(place-valises 1 t)
+
+3. MULTIPLE EXECUTIONS (MULTIPLE TRIALS)
+-------------------------------------------
+;; Execute the model 10 times WITHOUT graphical display
+(place-valises 10)
+
+;; Execute the model 10 times WITH graphical display
+(place-valises 10 t)
+
+;; Execute the model 100 times (for statistics)
+(place-valises 100)
+
+4. LEARNING SIMULATION
+-------------------------------------------
+;; Generate a learning graph with 50 blocks of 100 experiences
+(show-learning 50 t 100)
+
+;; Generate a learning graph with 20 blocks of 1000 experiences
+(show-learning 20 t 1000)
+
+;; Generate learning data WITHOUT graph
+(show-learning 50 nil 100)
+
+;; Quick test: 3 blocks of 100 trials
+(show-learning 3 t 100)
+
+===========================================
+IMPORTANT NOTES
+===========================================
+
+- Always execute (clear-all) before loading a new model
+- The t option in (place-valises n t) activates ASCII graphical display
+- show-learning generates a graph showing learning score evolution
+- Normalized score ranges from 0 to 3 (lower = better performance)
+- For more details on parameters, see Readme.txt
+
+===========================================
+TYPICAL USAGE EXAMPLES
+===========================================
+
+Example 1: Quick model test
+------------------------------------
+(clear-all)
+(load "projet.lisp")
+(place-valises 5 t)
+
+Example 2: Learning evaluation
+------------------------------------------
+(clear-all)
+(load "projet_hauteur.lisp")
+(show-learning 20 t 100)
+
+Example 3: Statistical simulation
+-----------------------------------
+(clear-all)
+(load "projet.lisp")
+(place-valises 1000)
