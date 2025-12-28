@@ -336,19 +336,7 @@ This model demonstrates capabilities relevant to:
 
 ---
 
-## Academic Context
 
-**Course**: IFT609/IFT703 - Cognitive Informatics  
-**Institution**: Université de Sherbrooke  
-**Focus**: Cognitive architecture modeling, constraint satisfaction, human-like AI systems
-
-### Team
-
-- **Hannachi Mallek** - hanm1601@usherbrooke.ca
-- **Mamady Iii Diakite** - diam2248@usherbrooke.ca
-- **Abdul Magide Djalo** - maga5296@usherbrooke.ca
-
-**Supervisor**: Professor Mohamed Mehdi Najjar, Université de Sherbrooke
 
 ---
 
@@ -372,13 +360,9 @@ This project demonstrates:
 - **Cognitive Architecture Research Community** for ongoing research and development
 - **Professor Mohamed Mehdi Najjar** for academic guidance and supervision
 
----
 
-## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
----
 
 <div align="center">
 
